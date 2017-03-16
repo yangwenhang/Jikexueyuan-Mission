@@ -1,0 +1,114 @@
+
+ .nav {
+     height: 40px;
+     margin-top: 20px;
+ }
+
+.head {
+    float: right;
+}
+.head a{
+    color: black;
+}
+
+.head1 {
+    float: left;
+    margin-right: 15px;
+}
+
+.set {
+    float: left;
+    margin-right: 25px;
+}
+
+.products {
+    float: left;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.contentpic {
+    margin: 0 auto;;;
+}
+
+.foot {
+    color: gray;
+    text-align: center;
+    margin: 120px auto;
+}
+.foot a{
+    color: gray;
+}
+
+.button1 {
+    background-color: #3385ff;
+    border: none;
+    color: white;
+}
+
+.button2 {
+    background-color: #3385ff;
+    border: none;
+    color: white;
+    height: 27px;
+    margin-left: -4px;
+}
+
+.searchinput {
+    width: 500px;
+    height: 22px;
+}
+
+.setul {
+    display: none;
+
+}
+
+/* 下拉前的样式*/
+
+.set:hover .setul {
+    display: block;
+    position: absolute;
+    right: 95px;
+    background-color: whitesmoke;
+
+}
+
+.set:hover a {
+    text-decoration: none;
+
+}
+
+/*设置按钮的鼠标下拉样式*/
+.productsul {
+    text-align: center;
+    display: none;
+
+}
+
+/*下拉前的样式*/
+.products:hover .productsul {
+    display: block;
+    position: absolute;
+    right: 15px;
+    background-color: whitesmoke;
+}
+
+.products:hover a {
+    text-decoration: none;
+}
+
+.button1:hover {
+    background-color: whitesmoke;
+    color: blue;
+}
+
+/*设置按钮的鼠标下拉样式*/
+.pul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
