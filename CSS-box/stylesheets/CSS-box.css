@@ -1,0 +1,98 @@
+/*将元素的 margin 和 padding 设置为零来覆盖这些浏览器样式。这可以分别进行，也可以使用通用选择器对所有元素进行设置：*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.in-box {
+    background-color: green;
+    width: 100px;
+    height: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+.w3cbox {
+    background-color: red;
+    padding: 5px;
+    width: 130px;
+    height: 230px;
+    margin: 10px;
+    border: 10px blue solid;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.iebox {
+    background-color: red;
+    padding: 5px;
+    width: 160px;
+    height: 260px;
+    margin: 10px;
+    border: 10px blue solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    background-color: goldenrod;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    flex-direction: column; /*默认是行排列*/
+
+}
+
+.f1 {
+    background-color: red;
+    flex: 1; /*占比父容器的比例*/
+    order: 1; /*排序,决定元素位置*/
+}
+
+.f2 {
+    background-color: aquamarine;
+    flex: 1; /*占比父容器的比例*/
+    order: -1;
+}
+
+.f3 {
+    background-color: green;
+    flex: 1; /*占比父容器的比例*/
+    order: 0;
+}
+
+.columnsbox { /*这是一个分栏的div*/
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+
+}
+
+.oldflexbox { /*这是一个老的弹性盒*/
+    display: -webkit-box;
+    width: 300px;
+    height: 200px;
+    background-color: greenyellow;
+    -moz-box-align: center; /*垂直居中*/
+    -webkit-box-align: center;
+    -moz-box-pack: center; /*水平居中*/
+    -webkit-box-pack: center;
+}
+
+.oldflexbox1 {
+    background-color: brown;
+    width: 140px;
+    height: 80px;
+}
