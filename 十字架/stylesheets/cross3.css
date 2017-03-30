@@ -20,13 +20,9 @@ html, body {
     margin-left: -150px;
 }
 
-/*设定wrapper里面的div的宽高,定位等公共样式,其中CSS分组时要单独占一行*/
-.wrapper .top,
-.wrapper .left,
-.wrapper .middle,
-.wrapper .right,
-.wrapper .bottom {
-
+/*设定wrapper里面的div的宽高,定位等公共样式*/
+.wrapper > div {
+    float: left;
     height: 100px;
     width: 100px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -39,17 +35,6 @@ html, body {
     margin: 0 100px;
     background: rgb(255, 238, 210);
 
-}
-
-.wrapper .flex-box {
-    width: 300px;
-    height: 100px;
-    display: flex; /*新的弹性盒模型*/
-    display: -webkit-box;
-    display: -moz-box;
-    display: box; /*旧的弹性盒模型*/
-    display: -webkit-box;
-    display: -moz-box;
 }
 
 .wrapper .right {
@@ -72,7 +57,7 @@ html, body {
 
 .wrapper .middle {
 
-    background: rgb(18, 58, 85) url("./images/jax.png") no-repeat center;
+    background: rgb(18, 58, 85) url("../images/jax.png") no-repeat center;
     -webkit-background-size: 24px 24px;
     background-size: 24px 24px;
     border-radius: 50%;
