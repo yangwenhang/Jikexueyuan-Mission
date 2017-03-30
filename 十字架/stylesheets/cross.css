@@ -1,0 +1,78 @@
+.container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    /*绝对居中，包括水平和垂直居中*/
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    top: 100px;;
+    right: 200px;
+    bottom: 100px;
+    box-shadow: -5px 5px 3px #C1B9B9 inset;
+}
+
+.second {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    right: 100px;
+    bottom: 200px;
+    box-shadow: -5px -5px 3px #C1B9B9 ;
+}
+
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 200px;
+    top: 100px;;
+    right: 200px;
+    bottom: 100px;
+    box-shadow: 5px -5px 3px #C1B9B9;
+}
+
+.fourth {
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    position: absolute;
+    left: 100px;
+    top: 200px;;
+    right: 100px;
+    bottom: 0;
+    box-shadow: -5px 5px 3px #C1B9B9;
+}
+
+.fifth {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+    left: 100px;
+    top: 100px;;
+    right: 100px;
+    bottom: 100px;
+    box-shadow: 2px 2px 2px #C1B9B9;
+
+}
+
+.jax {
+    position: absolute;
+    left: 18px;
+    top: 18px;;
+    right: 18px;
+    bottom:18px;
+
+}

@@ -1,0 +1,79 @@
+/*去掉所有元素的内外边距*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*消除body是由内容区堆叠产生的高度的影响,给定body一个高度,实现居中效果*/
+html, body {
+    height: 100%;
+}
+
+/*设置wrapper的垂直水平居中,这是CSS中的其中一种方法*/
+.wrapper {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+/*设定wrapper里面的div的宽高,定位等公共样式,其中CSS分组时要单独占一行*/
+.wrapper .top,
+.wrapper .left,
+.wrapper .middle,
+.wrapper .right,
+.wrapper .bottom {
+
+    height: 100px;
+    width: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border: 1px gray solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.wrapper .top {
+    margin: 0 100px;
+    background: rgb(255, 238, 210);
+
+}
+
+.wrapper .flex-box {
+    width: 300px;
+    height: 100px;
+    display: flex; /*新的弹性盒模型*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: box; /*旧的弹性盒模型*/
+    display: -webkit-box;
+    display: -moz-box;
+}
+
+.wrapper .right {
+
+    background: rgb(219, 208, 167);
+
+}
+
+.wrapper .bottom {
+    margin-left: 100px;
+    background: rgb(230, 208, 2);
+
+}
+
+.wrapper .left {
+
+    background: rgb(209, 76, 78);
+
+}
+
+.wrapper .middle {
+
+    background: rgb(18, 58, 85) url("./images/jax.png") no-repeat center;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+    border-radius: 50%;
+}
